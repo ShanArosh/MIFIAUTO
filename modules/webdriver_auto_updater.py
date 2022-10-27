@@ -50,7 +50,6 @@ def check_driver(driver_directory):
         # Executes cmd line entry to check for existing web-driver version locally
         os.chdir(driver_directory)
         # Turn driver_directory variable to absolute value 
-        print(os.getcwd())
         driver_directory = os.getcwd()
         cmd_run = subprocess.run("chromedriver --version",
                                  capture_output=True,
